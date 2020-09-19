@@ -10,9 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  states_rebuilder: ^2.2.0
-  flutter_blue: ^0.7.2
-  rxdart: ^0.24.0
+  states_rebuilder: 
+  flutter_blue: 
+  rxdart: 
 
 dev_dependencies:
   flutter_test:
