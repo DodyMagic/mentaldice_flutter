@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:rxdart/rxdart.dart';
-
 class DicesState extends StateType {
   final int _white;
   final int _black;
@@ -43,14 +41,9 @@ StreamController<BlackDiceState> blackDiceStateController =
 StreamController<RedDiceState> redDiceStateController =
     StreamController.broadcast();
 
-
 Stream<WhiteDiceState> get whiteDiceState => whiteDiceStateController.stream;
 Stream<BlackDiceState> get blackDiceState => blackDiceStateController.stream;
 Stream<RedDiceState> get redDiceState => redDiceStateController.stream;
-
-
-
-
 
 abstract class StateType extends Type {
   dynamic get data;
